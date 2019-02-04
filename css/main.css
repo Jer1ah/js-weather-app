@@ -63,6 +63,7 @@ body {
     padding: .1rem;
     margin: 7rem auto 0;
     box-shadow: 2px 3px 29px 0px rgba(173,173,173,1);
+    max-width: 95%;
 }
 
 
