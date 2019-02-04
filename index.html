@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Apple Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="weather">
+        <div class="weather__main">
+            <h2 class="weather__main--city">Charlotte</h2>
+            <h4 class="weather__main--forcast">Sunny</h4>
+            <h1 class="weather__main--temp">37&deg;</h1>
+        </div> <!-- .weather__main end -->
+        <div class="weather__lower">
+            <div class="weather__lower--left">
+                <h3 class="weather__lower--day">Sunday</h3>
+                <h3 class="weather__lower--today">Today</h3>
+            </div> <!-- .weather__lower-left end -->
+            <div class="weather__lower--right">
+                <h3 class="weather__lower--high">High</h3>
+                <h3 class="weather__lower--low">Low</h3>
+            </div> <!-- .weather__lower-right end -->
+        </div> <!-- .weather__lower end -->
+        <div class="lineBreak topLine"></div> <!-- .lineBreak end -->
+        <div class="weather__futurecast">
+            <ul class="weather__list">
+                <li class="weather__item">
+                    <h3 class="weather__item--day">Monday</h3>
+                    <img src="img/sun.svg" alt="Weather Icon" class="weather__item--icon">
+                    <div class="weather__item--highLow">
+                        <h3 class="weather__item--high">47</h3>
+                        <h3 class="weather__item--low">22</h3>
+                    </div> <!-- .weather__item-highLow end -->
+                </li>
+                <li class="weather__item">
+                    <h3 class="weather__item--day">Tuesday</h3>
+                    <img src="img/sun.svg" alt="Weather Icon" class="weather__item--icon">
+                    <div class="weather__item--highLow">
+                        <h3 class="weather__item--high">47</h3>
+                        <h3 class="weather__item--low">22</h3>
+                    </div> <!-- .weather__item-highLow end -->
+                </li>
+                <li class="weather__item">
+                    <h3 class="weather__item--day">Wednesday</h3>
+                    <img src="img/sun.svg" alt="Weather Icon" class="weather__item--icon">
+                    <div class="weather__item--highLow">
+                        <h3 class="weather__item--high">47</h3>
+                        <h3 class="weather__item--low">22</h3>
+                    </div> <!-- .weather__item-highLow end -->
+                </li>
+                <li class="weather__item">
+                    <h3 class="weather__item--day">Thursday</h3>
+                    <img src="img/sun.svg" alt="Weather Icon" class="weather__item--icon">
+                    <div class="weather__item--highLow">
+                        <h3 class="weather__item--high">47</h3>
+                        <h3 class="weather__item--low">22</h3>
+                    </div> <!-- .weather__item-highLow end -->
+                </li>
+                <li class="weather__item">
+                    <h3 class="weather__item--day">Friday</h3>
+                    <img src="img/sun.svg" alt="Weather Icon" class="weather__item--icon">
+                    <div class="weather__item--highLow">
+                        <h3 class="weather__item--high">47</h3>
+                        <h3 class="weather__item--low">22</h3>
+                    </div> <!-- .weather__item-highLow end -->
+                </li>
+            </ul> <!-- .weather__list end -->
+        </div> <!-- .weather__futurecast end -->
+        <div class="lineBreak"></div>
+        <div class="weather__input">
+            <input type="text" placeholder="ZipCode..">
+            <button>Get Weather!</button>
+        </div> <!-- .weather__input end -->
+        <div class="lineBreak bottom"></div>
+        <div class="weather__nav">
+            <h4 class="weatherIcon">weatherAPP</h4>
+            <ul class="weather__nav--list">
+                <li class="weather__nav--item"><img src="img/navigation.svg" alt="Navigation Icon" class="navIcon"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+                <li class="weather__nav--item"></li>
+            </ul> <!-- .weather__nav-list end -->
+            <img src="img/list.svg" alt="Weather Nav Icon" class="menuIcon">
+        </div> <!-- .weather__nav end -->
+    </div> <!-- .weather end -->
+<script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
