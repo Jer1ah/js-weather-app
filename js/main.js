@@ -29,7 +29,7 @@ weatherButton.addEventListener("click", () => {
 weatherButton.addEventListener("click", () => {
     let userZip = zipcodeInput.value;
 
-    fetch(`http://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4&q=${userZip}`)
+    fetch(`//dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4&q=${userZip}`)
     .then((weatherObject) => {
         return weatherObject.json();
     })
@@ -37,7 +37,7 @@ weatherButton.addEventListener("click", () => {
         // Changing city name to current city  
         currentCity.innerHTML = weather[0].LocalizedName;
         let zipcode = weather[0].Key;
-        return fetch(`http://dataservice.accuweather.com/currentconditions/v1/${zipcode}?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4`);
+        return fetch(`//dataservice.accuweather.com/currentconditions/v1/${zipcode}?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4`);
     })
     .then((currentWeatherObject) => {
         return currentWeatherObject.json()
@@ -54,13 +54,13 @@ weatherButton.addEventListener("click", () => {
 weatherButton.addEventListener("click", () => {
     let userZip = zipcodeInput.value;
 
-    fetch(`http://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4&q=${userZip}`)
+    fetch(`//dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4&q=${userZip}`)
     .then((weatherObject) => {
         return weatherObject.json();
     })
     .then((weather) => {
         let zipcode = weather[0].Key;
-        return fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${zipcode}?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4`);
+        return fetch(`//dataservice.accuweather.com/forecasts/v1/daily/5day/${zipcode}?apikey=yjhc9euukkwR393enGgBNNlSaIA1i0T4`);
     })
     .then((futureWeatherObject) => {
         return futureWeatherObject.json();

@@ -167,8 +167,12 @@ body {
 }
 
 .weather__item--highLow {
-    display: flex;
     font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6.2rem;
+    margin-right: 1rem;
 }
 
 .weather__item--day {
@@ -180,14 +184,12 @@ body {
     width: 2.8rem;
 }
 
-.weather__item--highLow {
-    width: 5rem;
-    margin-right: 2rem;
+.weather__item--icon {
+    margin-right: 1.5rem;
 }
 
 .weather__item--highLow h3:nth-child(2) {
     color: #edeaea;
-    margin-left: 2.1rem;
 }
 
 
